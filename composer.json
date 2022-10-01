@@ -7,5 +7,7 @@
             "email": "erik.masny@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "illuminate/collections": "^9.33"
+    }
 }
