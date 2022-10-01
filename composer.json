@@ -1,0 +1,11 @@
+{
+    "name": "erikgreasy/wp-framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "erikgreasy",
+            "email": "erik.masny@gmail.com"
+        }
+    ],
+    "require": {}
+}
