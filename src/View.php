@@ -12,15 +12,16 @@ class View
     private FilesystemLoader $loader;
     private Environment $twig;
     private static ?View $instance = null;
+    private string $cachePath;
 
     private function __construct()
     {
         $this->loader = new FilesystemLoader(__DIR__ . '/../templates');
-
-        $wpUploadDir = wp_get_upload_dir()['basedir'] . '/wp-framwork/twig';
+        $this->cachePath = wp_get_upload_dir()['basedir'] . '/wp-framwork/twig';
 
         $this->twig = new Environment($this->loader, [
-            'cache' => $wpUploadDir,
+            'cache' => $this->cachePath,
+            'debug' => true
         ]);
     }
 
