@@ -8,6 +8,12 @@
         }
     ],
     "require": {
-        "illuminate/collections": "^9.33"
+        "illuminate/collections": "^9.33",
+        "twig/twig": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Erikgreasy\\WpFramework\\": "src"
+        }
     }
 }
